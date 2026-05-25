@@ -78,6 +78,20 @@
   border-radius: 3rem;
 }
 
+.hero-logo-wrap {
+  position: relative;
+  display: inline-block;
+}
+.hero-trademark {
+  position: absolute;
+  top: 6px;
+  right: -16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1;
+}
+
 .hero-image img {
   max-width: 100%;
   height: auto;

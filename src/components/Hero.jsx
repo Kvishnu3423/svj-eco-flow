@@ -31,7 +31,10 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-image">
-          <img src="/images/logo.png" alt="SVJ Eco Flow Systems" />
+          <div className="hero-logo-wrap">
+            <img src="/images/logo.png" alt="SVJ Eco Flow Systems" />
+            <sup className="hero-trademark">&#8482;</sup>
+          </div>
         </div>
       </div>
     </section>
