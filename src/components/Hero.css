@@ -84,9 +84,9 @@
 }
 .hero-trademark {
   position: absolute;
-  top: 6px;
-  right: -16px;
-  font-size: 1rem;
+  top: 4px;
+  left: 58%;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--primary-dark);
   line-height: 1;
