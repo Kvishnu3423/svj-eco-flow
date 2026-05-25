@@ -56,9 +56,9 @@ export default function Team() {
       <section className="team-cta">
         <div className="container team-cta-inner">
           <h3>Ready to work with our expert team?</h3>
-          <Link to="/contact#enquiry-form" className="btn">
+          <a href="tel:+919959992037" className="btn">
             <i className="fas fa-paper-plane"></i> Get in Touch
-          </Link>
+          </a>
         </div>
       </section>
 
