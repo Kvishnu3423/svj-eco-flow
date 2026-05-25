@@ -57,6 +57,17 @@ export default function Navbar() {
             <li><NavLink to="/" end>Home</NavLink></li>
             <li><NavLink to="/services">Services</NavLink></li>
             <li><NavLink to="/amc">AMC &amp; Maintenance</NavLink></li>
+            <li className="nav-dropdown">
+              <button className="nav-dropdown-btn">
+                Products <i className="fas fa-chevron-down"></i>
+              </button>
+              <ul className="dropdown-menu">
+                <li><NavLink to="/products/pumps"><i className="fas fa-tachometer-alt"></i> Pumps</NavLink></li>
+                <li><NavLink to="/products/klds"><i className="fas fa-water"></i> KLD'S</NavLink></li>
+                <li><NavLink to="/products/lph"><i className="fas fa-chart-line"></i> LPH — Metre³/hr</NavLink></li>
+                <li><NavLink to="/products/spare-parts"><i className="fas fa-cogs"></i> Spare Parts</NavLink></li>
+              </ul>
+            </li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
 
@@ -81,6 +92,11 @@ export default function Navbar() {
             <li><NavLink to="/" end onClick={close}>Home</NavLink></li>
             <li><NavLink to="/services" onClick={close}>Services</NavLink></li>
             <li><NavLink to="/amc" onClick={close}>AMC &amp; Maintenance</NavLink></li>
+            <li className="mobile-products-label">Products</li>
+            <li><NavLink to="/products/pumps" onClick={close} className="mobile-sub-link"><i className="fas fa-tachometer-alt"></i> Pumps</NavLink></li>
+            <li><NavLink to="/products/klds" onClick={close} className="mobile-sub-link"><i className="fas fa-water"></i> KLD'S</NavLink></li>
+            <li><NavLink to="/products/lph" onClick={close} className="mobile-sub-link"><i className="fas fa-chart-line"></i> LPH — Metre³/hr</NavLink></li>
+            <li><NavLink to="/products/spare-parts" onClick={close} className="mobile-sub-link"><i className="fas fa-cogs"></i> Spare Parts</NavLink></li>
             <li><NavLink to="/contact" onClick={close}>Contact</NavLink></li>
           </ul>
           <Link to="/contact#enquiry-form" className="btn mobile-cta" onClick={close}>

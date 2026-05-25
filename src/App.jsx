@@ -8,6 +8,7 @@ import AMC from './components/AMC'
 import Contact from './components/Contact'
 import Startup from './pages/Startup'
 import Team from './pages/Team'
+import ComingSoon from './pages/ComingSoon'
 
 export default function App() {
   return (
@@ -20,6 +21,10 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/startup" element={<Startup />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/products/pumps" element={<ComingSoon />} />
+        <Route path="/products/klds" element={<ComingSoon />} />
+        <Route path="/products/lph" element={<ComingSoon />} />
+        <Route path="/products/spare-parts" element={<ComingSoon />} />
       </Route>
     </Routes>
   )
