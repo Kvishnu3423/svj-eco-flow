@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.svjecoflow.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/services</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/amc</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/startup</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/team</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/products/pumps</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/products/klds</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/products/lph</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.svjecoflow.com/products/spare-parts</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+</urlset>
