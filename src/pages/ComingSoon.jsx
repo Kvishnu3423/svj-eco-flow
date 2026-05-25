@@ -27,8 +27,8 @@ export default function ComingSoon() {
           <Link to="/contact#enquiry-form" className="btn">
             <i className="fas fa-paper-plane"></i> Enquire Now
           </Link>
-          <Link to="/products/pumps" className="btn btn-cs-outline" onClick={e => pathname === '/products/pumps' && e.preventDefault()}>
-            <i className="fas fa-arrow-left"></i> Back to Products
+          <Link to="/" className="btn btn-cs-outline">
+            <i className="fas fa-arrow-left"></i> Back to Home
           </Link>
         </div>
         <div className="cs-notify">
