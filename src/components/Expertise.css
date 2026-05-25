@@ -1,0 +1,35 @@
+.expertise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.expertise-card {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.expertise-card i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.expertise-card h3 {
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.expertise-card p {
+  color: #2a4a6a;
+  font-size: 0.95rem;
+}
