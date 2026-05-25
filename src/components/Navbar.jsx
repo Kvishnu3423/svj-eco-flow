@@ -65,7 +65,7 @@ export default function Navbar() {
           {/* LOGO */}
           <NavLink to="/" className="logo" onClick={close}>
             <img src="/images/Name.png" alt="SVJ Eco Flow Systems" className="logo-img" />
-            SVJ <span>Eco Flow Systems</span>
+            SVJ <span>Eco Flow Systems&#8482;</span>
           </NavLink>
 
           {/* DESKTOP LINKS */}

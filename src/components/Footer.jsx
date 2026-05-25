@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <h3>SVJ Eco Flow Systems</h3>
+            <h3>SVJ Eco Flow Systems&#8482;</h3>
             <p>Specialists in Water, WasteWater &amp; Pump Lifecycle Management.</p>
             <p>
               <i className="fas fa-certificate"></i> Certified O&amp;M
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
         <div className="copyright">
           <p>
-            © 2025 SVJ Eco Flow Systems — Comprehensive Water &amp; WasteWater treatment Solutions |
+            © 2025 SVJ Eco Flow Systems&#8482; — Comprehensive Water &amp; WasteWater treatment Solutions |
             STP, RO, Pump Sales & Maintenance, AMC Services.
           </p>
         </div>
