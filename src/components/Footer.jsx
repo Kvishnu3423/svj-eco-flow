@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <h3>SVJ Eco Flow Systems</h3>
-            <p>Specialists in water, wastewater &amp; pump lifecycle management.</p>
+            <p>Specialists in Water, WasteWater &amp; Pump Lifecycle Management.</p>
             <p>
               <i className="fas fa-certificate"></i> Certified O&amp;M
             </p>
