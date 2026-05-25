@@ -1,15 +1,31 @@
-import React, { useState, useEffect } from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import React, { useState, useEffect, useRef } from 'react'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [scrolled, setScrolled]  = useState(false)
+  const [menuOpen, setMenuOpen]       = useState(false)
+  const [scrolled, setScrolled]       = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const dropdownRef = useRef(null)
+  const location = useLocation()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  // Close dropdown on route change
+  useEffect(() => { setDropdownOpen(false) }, [location.pathname])
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handler = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target))
+        setDropdownOpen(false)
+    }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
   }, [])
 
   const close = () => setMenuOpen(false)
@@ -57,11 +73,14 @@ export default function Navbar() {
             <li><NavLink to="/" end>Home</NavLink></li>
             <li><NavLink to="/services">Services</NavLink></li>
             <li><NavLink to="/amc">AMC &amp; Maintenance</NavLink></li>
-            <li className="nav-dropdown">
-              <button className="nav-dropdown-btn">
-                Products <i className="fas fa-chevron-down"></i>
+            <li className="nav-dropdown" ref={dropdownRef}>
+              <button
+                className={`nav-dropdown-btn ${dropdownOpen ? 'active' : ''}`}
+                onClick={() => setDropdownOpen(o => !o)}
+              >
+                Products <i className={`fas fa-chevron-${dropdownOpen ? 'up' : 'down'}`}></i>
               </button>
-              <ul className="dropdown-menu">
+              <ul className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
                 <li><NavLink to="/products/pumps"><i className="fas fa-tachometer-alt"></i> Pumps</NavLink></li>
                 <li><NavLink to="/products/klds"><i className="fas fa-water"></i> KLD'S</NavLink></li>
                 <li><NavLink to="/products/lph"><i className="fas fa-chart-line"></i> LPH — Metre³/hr</NavLink></li>

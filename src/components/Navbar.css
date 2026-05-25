@@ -149,11 +149,12 @@
   transition: color 0.2s, background 0.2s;
 }
 .nav-dropdown-btn i { font-size: 0.7rem; transition: transform 0.2s; }
-.nav-dropdown:hover .nav-dropdown-btn {
+.nav-dropdown-btn:hover,
+.nav-dropdown-btn.active {
   color: var(--primary);
   background: var(--primary-light);
 }
-.nav-dropdown:hover .nav-dropdown-btn i { transform: rotate(180deg); }
+.nav-dropdown-btn.active i { transform: rotate(180deg); }
 
 .dropdown-menu {
   display: none;
@@ -169,7 +170,7 @@
   min-width: 210px;
   z-index: 200;
 }
-.nav-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu.open { display: block; }
 .dropdown-menu li a {
   display: flex;
   align-items: center;
