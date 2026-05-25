@@ -335,9 +335,18 @@
   .sidebar-map { grid-column: span 2; }
 }
 @media (max-width: 640px) {
-  .contact-hero h1 { font-size: 2rem; }
+  .contact-hero { padding: 3rem 0 2.5rem; }
+  .contact-hero h1 { font-size: 1.8rem; }
+  .contact-hero p { font-size: 0.95rem; }
   .contact-info-grid { grid-template-columns: 1fr; }
+  .contact-info-card p { font-size: 0.85rem; }
   .form-row { grid-template-columns: 1fr; }
   .contact-sidebar { grid-template-columns: 1fr; }
   .sidebar-map { grid-column: span 1; }
+  .contact-form-wrap h2 { font-size: 1.4rem; }
+  .faq-q { font-size: 0.9rem; padding: 1rem 1.1rem; }
+}
+@media (max-width: 400px) {
+  .contact-hero h1 { font-size: 1.5rem; }
+  .sidebar-cta { flex-direction: column; }
 }

@@ -520,3 +520,12 @@
   .amc-cta-inner { flex-direction: column; text-align: center; }
   .amc-cta-actions { justify-content: center; }
 }
+@media (max-width: 480px) {
+  .amc-hero { height: 300px; }
+  .amc-hero-overlay h1 { font-size: 1.6rem; }
+  .amc-hero-overlay p { font-size: 0.9rem; }
+  .amc-hero-stats { flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; }
+  .amc-intro-img img,
+  .amc-sla-img img { height: 200px; }
+  .amc-cta-actions { flex-direction: column; align-items: center; }
+}

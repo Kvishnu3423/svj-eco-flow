@@ -132,6 +132,12 @@
   .join-image img { height: 220px; }
 }
 @media (max-width: 580px) {
+  .team-hero { padding: 3.5rem 0 3rem; }
+  .team-hero h1 { font-size: 1.6rem; }
+  .team-hero p { font-size: 0.95rem; }
   .team-grid { grid-template-columns: 1fr; }
+  .team-section { padding: 3rem 0; }
+  .team-join { padding: 3rem 0; }
   .team-cta-inner { flex-direction: column; text-align: center; }
+  .team-avatar { height: 200px; }
 }

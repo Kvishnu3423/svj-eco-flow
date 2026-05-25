@@ -100,10 +100,13 @@
 }
 
 @media (max-width: 780px) {
-  .hero-content h1 {
-    font-size: 2.3rem;
-  }
-  .hero-image i {
-    font-size: 7rem;
-  }
+  .hero-content h1 { font-size: 2.3rem; }
+  .hero-image i { font-size: 7rem; }
+  .hero-image { order: -1; }
+}
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 1.7rem; }
+  .hero-content p { font-size: 0.95rem; }
+  .hero-stats { gap: 1rem; font-size: 0.85rem; }
+  .hero-cta { flex-direction: column; align-items: flex-start; }
 }

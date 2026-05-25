@@ -187,7 +187,14 @@
   .values-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 580px) {
+  .startup-hero { padding: 3.5rem 0 3rem; }
+  .startup-hero h1 { font-size: 1.6rem; }
+  .startup-hero p { font-size: 0.95rem; }
+  .startup-hero-btns { flex-direction: column; align-items: center; }
+  .startup-mission { padding: 3rem 0; }
+  .startup-values { padding: 3rem 0; }
   .values-grid { grid-template-columns: 1fr; }
-  .mission-stats { gap: 1.2rem; }
-  .milestone-timeline::before { left: 70px; }
+  .mission-stats { gap: 1.2rem; flex-wrap: wrap; }
+  .startup-cta-overlay { padding: 3rem 0; }
+  .startup-cta-overlay h2 { font-size: 1.4rem; }
 }

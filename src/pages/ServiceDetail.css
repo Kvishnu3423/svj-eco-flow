@@ -290,9 +290,15 @@
   .sd-others-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
-  .sd-hero { height: 320px; }
-  .sd-hero-overlay h1 { font-size: 1.8rem; }
+  .sd-hero { height: 280px; }
+  .sd-hero-overlay h1 { font-size: 1.6rem; }
+  .sd-hero-overlay p { font-size: 0.9rem; }
   .sd-process-grid,
   .sd-others-grid { grid-template-columns: 1fr; }
-  .sd-mid-image img { height: 220px; }
+  .sd-mid-image img { height: 200px; }
+  .sd-applications { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 400px) {
+  .sd-hero-overlay h1 { font-size: 1.3rem; }
+  .sd-applications { grid-template-columns: 1fr; }
 }

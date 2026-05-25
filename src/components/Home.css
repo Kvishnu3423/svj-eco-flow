@@ -318,4 +318,12 @@
   .gallery-item.gi-3 { grid-column: span 1; }
   .home-services-grid { grid-template-columns: 1fr; }
   .home-cta-content h2 { font-size: 1.6rem; }
+  .home-cta-overlay { padding: 3rem 0; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .home-cta-content h2 { font-size: 1.3rem; }
+  .home-cta-content p { font-size: 0.92rem; }
+  .cta-buttons { flex-direction: column; align-items: center; }
 }
