@@ -105,7 +105,37 @@
   align-items: center;
 }
 .join-text h2 { font-size: 1.75rem; font-weight: 800; color: #093e6d; margin-bottom: 1rem; line-height: 1.3; }
-.join-text p  { color: #5a7a9a; line-height: 1.75; margin-bottom: 1.5rem; }
+.join-text p  { color: #5a7a9a; line-height: 1.75; margin-bottom: 1rem; }
+.join-btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #0077b5;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-linkedin:hover { background: #005f8e; transform: translateY(-2px); }
+.btn-outline-join {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  color: #093e6d;
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+  border-radius: 40px;
+  border: 2px solid #093e6d;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.btn-outline-join:hover { background: #093e6d; color: #fff; transform: translateY(-2px); }
 .join-image img {
   width: 100%;
   border-radius: 16px;
