@@ -8,21 +8,21 @@ const serviceHighlights = [
     icon: 'fas fa-industry',
     title: 'Sewage Treatment Plants',
     desc: 'MBR, MBBR & SBR technologies for residential, commercial & industrial clients.',
-    img: '/images/1.jpg',
+    img: '/images/6.jpg',
     route: '/services',
   },
   {
     icon: 'fas fa-fill-drip',
     title: 'RO & Water Purification',
     desc: 'High-recovery reverse osmosis systems with energy-efficient pre-treatment.',
-    img: '/images/6.jpg',
+    img: '/images/RO.webp',
     route: '/services',
   },
   {
     icon: 'fas fa-faucet-drip',
     title: 'Pump Systems',
     desc: 'Multistage, submersible & centrifugal pumps with VFD automation panels.',
-    img: '/images/5.jpg',
+    img: '/images/PUMPS.png',
     route: '/services',
   },
   {
@@ -182,10 +182,10 @@ export default function Home() {
               pump system, or AMC requirement.
             </p>
             <div className="cta-buttons">
-              <Link to="/contact" className="btn">
+              <Link to="/contact#enquiry-form" className="btn">
                 <i className="fas fa-calendar-alt"></i> Request a Free Quote
               </Link>
-              <Link to="/services" className="btn btn-outline btn-outline-white">
+              <Link to="/services" className="btn btn-outline-white">
                 <i className="fas fa-wrench"></i> Explore Services
               </Link>
             </div>

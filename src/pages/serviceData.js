@@ -4,7 +4,7 @@ export const serviceList = [
     icon: 'fas fa-droplet',
     title: 'Water Treatment Plant (WTP)',
     shortDesc: 'Complete raw water treatment systems — coagulation, filtration, softening and disinfection for drinking & industrial use.',
-    cardImage: '/images/2.png',
+    cardImage: '/images/Water-Treatment-Plant-WTP.avif',
     tags: ['Drinking Water', 'Softening', 'Filtration', 'Disinfection'],
   },
   {
@@ -12,7 +12,7 @@ export const serviceList = [
     icon: 'fas fa-industry',
     title: 'Sewage Treatment Plant (STP)',
     shortDesc: 'MBR, MBBR & SBR technologies for residential, commercial & industrial clients with zero-discharge options.',
-    cardImage: '/images/8.jpg',
+    cardImage: '/images/6.jpg',
     tags: ['MBR', 'MBBR', 'SBR', 'Zero Discharge'],
   },
   {
@@ -20,7 +20,7 @@ export const serviceList = [
     icon: 'fas fa-fill-drip',
     title: 'Reverse Osmosis (RO) Plants',
     shortDesc: 'High-recovery RO systems with energy-efficient pre-treatment, CIP skids and remote monitoring.',
-    cardImage: '/images/6.jpg',
+    cardImage: '/images/RO.webp',
     tags: ['Industrial RO', 'Commercial RO', 'CIP', 'Membrane'],
   },
   {
@@ -28,7 +28,7 @@ export const serviceList = [
     icon: 'fas fa-faucet-drip',
     title: 'Pump Systems & Automation',
     shortDesc: 'Multistage, submersible & centrifugal pumps with VFD panels, hydro-pneumatic systems and SCADA.',
-    cardImage: '/images/5.jpg',
+    cardImage: '/images/PUMPS.png',
     tags: ['VFD', 'Submersible', 'Centrifugal', 'Automation'],
   },
   {
@@ -70,7 +70,7 @@ export const serviceDetails = {
   wtp: {
     title: 'Water Treatment Plant (WTP)',
     tagline: 'Safe Water. Engineered from Source to Supply.',
-    heroImage: '/images/3.jpg',
+    heroImage: '/images/Water-Treatment-Plant-WTP.avif',
     overview: `A Water Treatment Plant (WTP) converts raw water from rivers, lakes, borewells or municipal
     supply into water that meets drinking, process or industrial quality standards. SVJ Eco Flow Systems
     designs and builds complete WTPs — from small packaged units for apartments and offices to large-capacity
@@ -92,7 +92,7 @@ export const serviceDetails = {
       { step: '05', title: 'Activated Carbon & Softening', desc: 'Activated carbon removes odour, chlorine and organics. Ion-exchange softeners reduce hardness as required.' },
       { step: '06', title: 'Disinfection & Storage', desc: 'Chlorination, UV or ozone ensures pathogen-free water. Treated water is stored in food-grade overhead / underground tanks.' },
     ],
-    midImage: '/images/10.jpg',
+    midImage: '/images/Water-Treatment-Plant-WTP.avif',
     midCaption: 'Aerial view of a multi-stage water treatment and clarification plant.',
     applications: [
       'Drinking water for apartments & townships',
@@ -108,7 +108,7 @@ export const serviceDetails = {
   stp: {
     title: 'Sewage Treatment Plant (STP)',
     tagline: 'Clean Effluent. Zero Compromise.',
-    heroImage: '/images/8.jpg',
+    heroImage: '/images/6.jpg',
     overview: `SVJ Eco Flow Systems designs and builds sewage treatment plants tailored to the exact
     volumetric and quality requirements of each client. Whether you need a compact STP for a gated
     community or a large-scale installation for an industrial township, we deliver systems that meet
@@ -129,7 +129,7 @@ export const serviceDetails = {
       { step: '05', title: 'Tertiary Filtration', desc: 'Sand, activated carbon and ultra-filtration for polishing the effluent to reuse quality.' },
       { step: '06', title: 'Disinfection & Reuse', desc: 'UV / chlorination ensures pathogen-free water ready for gardening, flushing or discharge.' },
     ],
-    midImage: '/images/10.jpg',
+    midImage: '/images/6.jpg',
     midCaption: 'Four-tank clarifier array — aerial view of one of our STP installations.',
     applications: ['Residential complexes & gated communities', 'Hotels & resorts', 'Hospitals & institutions', 'Industrial townships', 'Food & beverage plants'],
     ctaText: 'Get a free STP design consultation',
@@ -138,7 +138,7 @@ export const serviceDetails = {
   ro: {
     title: 'Reverse Osmosis (RO) Plants',
     tagline: 'Pure Water. Engineered Precisely.',
-    heroImage: '/images/6.jpg',
+    heroImage: '/images/RO.webp',
     overview: `Our reverse osmosis systems are engineered for maximum recovery and minimum energy consumption.
     From drinking-water RO units for offices to high-capacity industrial plants requiring demineralised or
     ultra-pure water, SVJ Eco Flow covers the full spectrum. Every system includes a pre-treatment train
@@ -159,7 +159,7 @@ export const serviceDetails = {
       { step: '05', title: 'Permeate Post-Treatment', desc: 'Remineralisation, pH correction and UV disinfection bring product water to spec.' },
       { step: '06', title: 'CIP & Monitoring', desc: 'Automated clean-in-place cycles and real-time performance logging protect the system.' },
     ],
-    midImage: '/images/7.jpg',
+    midImage: '/images/RO.webp',
     midCaption: 'Close-up of high-pressure pump manifold in an industrial RO installation.',
     applications: ['Drinking water for offices & institutions', 'Boiler feed water (demineralised)', 'Pharmaceutical & food-grade water', 'Textile & chemical process water', 'Car wash & laundry recycling'],
     ctaText: 'Request an RO plant proposal',
@@ -168,7 +168,7 @@ export const serviceDetails = {
   pumps: {
     title: 'Pump Systems & Automation',
     tagline: 'Reliable Flow. Intelligent Control.',
-    heroImage: '/images/5.jpg',
+    heroImage: '/images/PUMPS.png',
     overview: `Water doesn't move itself — and neither should your team. SVJ Eco Flow designs, supplies and
     commissions pumping solutions that deliver the right flow at the right pressure, every time. From simple
     booster sets to multi-pump hydro-pneumatic stations with VFD control, we integrate mechanical and
@@ -189,7 +189,7 @@ export const serviceDetails = {
       { step: '05', title: 'Electrical & Control Wiring', desc: 'Panel earthing, cable laying and control wiring done to IS / IEC standards.' },
       { step: '06', title: 'Commissioning & Handover', desc: 'Performance testing at rated flow and head, operator training and O&M manual handover.' },
     ],
-    midImage: '/images/5.jpg',
+    midImage: '/images/PUMPS.png',
     midCaption: 'High-pressure pump arrays installed at a water treatment facility.',
     applications: ['Water supply booster stations', 'Fire-fighting pump sets', 'STP / ETP transfer pumps', 'Irrigation pumping stations', 'Industrial process pumps'],
     ctaText: 'Get a pump system quote',

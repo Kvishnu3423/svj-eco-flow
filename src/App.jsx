@@ -6,6 +6,8 @@ import Services from './components/Services'
 import ServiceDetail from './pages/ServiceDetail'
 import AMC from './components/AMC'
 import Contact from './components/Contact'
+import Startup from './pages/Startup'
+import Team from './pages/Team'
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/services/:id" element={<ServiceDetail />} />
         <Route path="/amc" element={<AMC />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/startup" element={<Startup />} />
+        <Route path="/team" element={<Team />} />
       </Route>
     </Routes>
   )

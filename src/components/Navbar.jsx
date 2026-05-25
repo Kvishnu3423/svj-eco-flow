@@ -20,12 +20,12 @@ export default function Navbar() {
       <div className="topbar">
         <div className="container topbar-inner">
           <div className="topbar-left">
-            <a href="tel:+919959992037"><i className="fas fa-phone-alt"></i> +91 9959992037</a>
+            <a href="tel:+919959992027"><i className="fas fa-phone-alt"></i> +91 9959992027</a>
             <a href="mailto:Info@svjecoflow.com"><i className="fas fa-envelope"></i> Info@svjecoflow.com</a>
             <span><i className="fas fa-map-marker-alt"></i> Vijayawada, Andhra Pradesh</span>
           </div>
           <div className="topbar-right">
-            <a href="https://wa.me/919959992037" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <a href="https://wa.me/919959992027" target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <i className="fab fa-whatsapp"></i>
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
@@ -34,10 +34,10 @@ export default function Navbar() {
             <a href="https://www.instagram.com/svj.ecoflow?igsh=MWU2dnYzZXVyMWQ4dQ==" target="_blank" rel="noreferrer" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61590155134523" target="_blank" rel="noreferrer" aria-label="Facebook">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <span className="topbar-badge"><i className="fas fa-headset"></i> 24/7 Emergency</span>
+            <span className="topbar-badge"><i className="fas fa-headset"></i> 24/7 Support</span>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ export default function Navbar() {
           </ul>
 
           {/* DESKTOP CTA */}
-          <Link to="/contact" className="nav-cta-btn">
+          <Link to="/contact#enquiry-form" className="nav-cta-btn">
             <i className="fas fa-headset"></i> Get a Quote
           </Link>
 
@@ -83,7 +83,7 @@ export default function Navbar() {
             <li><NavLink to="/amc" onClick={close}>AMC &amp; Maintenance</NavLink></li>
             <li><NavLink to="/contact" onClick={close}>Contact</NavLink></li>
           </ul>
-          <Link to="/contact" className="btn mobile-cta" onClick={close}>
+          <Link to="/contact#enquiry-form" className="btn mobile-cta" onClick={close}>
             <i className="fas fa-headset"></i> Get a Quote
           </Link>
           <div className="mobile-contact">

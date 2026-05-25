@@ -29,6 +29,14 @@ footer {
   margin-bottom: 0.4rem;
   color: #a8c8e0;
 }
+.footer-grid p a {
+  color: #a8c8e0;
+  text-decoration: none;
+}
+.footer-grid p a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
 .footer-grid i {
   color: var(--primary);

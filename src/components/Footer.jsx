@@ -21,14 +21,14 @@ export default function Footer() {
           </div>
           <div>
             <h4>Support</h4>
-            <p>24x7 Helpline: +91 9959992027</p>
-            <p>Email: Info@svjecoflow.com</p>
+            <p>24x7 Support: <a href="tel:+919959992027">+91 9959992027</a></p>
+            <p>Email: <a href="mailto:Info@svjecoflow.com">Info@svjecoflow.com</a></p>
           </div>
         </div>
         <div className="copyright">
           <p>
-            © 2025 SVJ Eco Flow Systems — Comprehensive water &amp; wastewater treatment solutions |
-            STP, RO, Pump maintenance, AMC services.
+            © 2025 SVJ Eco Flow Systems — Comprehensive Water &amp; WasteWater treatment Solutions |
+            STP, RO, Pump Sales & Maintenance, AMC Services.
           </p>
         </div>
       </div>

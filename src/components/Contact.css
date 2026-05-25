@@ -73,6 +73,15 @@
   color: #2a4a6a;
   line-height: 1.55;
 }
+.contact-info-card p a {
+  color: #2a4a6a;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-info-card p a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
 
 /* ── BODY ── */
 .contact-body { padding: 3.5rem 0 4rem; }

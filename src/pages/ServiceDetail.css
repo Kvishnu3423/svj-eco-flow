@@ -8,7 +8,7 @@
 .sd-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(9,62,109,0.88) 0%, rgba(27,126,68,0.72) 100%);
+  background: linear-gradient(135deg, rgba(9,62,109,0.62) 0%, rgba(27,126,68,0.48) 100%);
   display: flex;
   align-items: flex-end;
   padding-bottom: 3rem;

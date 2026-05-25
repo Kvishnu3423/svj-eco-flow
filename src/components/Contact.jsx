@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
-import { db } from '../firebase'
+import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import './Contact.css'
+
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwGS7DhzsfRaIeWVr_YvADVM_JZ9AU2WuHsvIjY_1CZln0crhharjyOKujbl88IcaYSAg/exec'
 
 const EMPTY_FORM = {
   fullName:    '',
@@ -28,12 +29,18 @@ const infoCards = [
   {
     icon: 'fas fa-phone-alt',
     title: 'Call Us',
-    lines: ['+91 9959992037 (Sales & AMC)', '+91 9959992027 (24/7 Emergency)'],
+    lines: [
+      { text: '+91 9959992037 (Sales & AMC)',   href: 'tel:+919959992037' },
+      { text: '+91 9959992027 (24/7 For Support)', href: 'tel:+919959992027' },
+    ],
   },
   {
     icon: 'fas fa-envelope',
     title: 'Email Us',
-    lines: ['Info@svjecoflow.com', 'Response within 4 business hours'],
+    lines: [
+      { text: 'Info@svjecoflow.com', href: 'mailto:Info@svjecoflow.com' },
+      'Response within 4 business hours',
+    ],
   },
   {
     icon: 'fas fa-clock',
@@ -65,6 +72,14 @@ export default function Contact() {
   const [form, setForm]       = useState(EMPTY_FORM)
   const [status, setStatus]   = useState('idle')   // idle | submitting | success | error
   const [openFaq, setOpenFaq] = useState(null)
+  const { hash } = useLocation()
+
+  useEffect(() => {
+    if (hash === '#enquiry-form') {
+      const el = document.getElementById('enquiry-form')
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [hash])
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
@@ -72,10 +87,11 @@ export default function Contact() {
     e.preventDefault()
     setStatus('submitting')
     try {
-      await addDoc(collection(db, 'contacts'), {
-        ...form,
-        createdAt: serverTimestamp(),
-        status: 'new',
+      await fetch(SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, submittedAt: new Date().toLocaleString('en-IN') }),
       })
       setStatus('success')
       setForm(EMPTY_FORM)
@@ -108,7 +124,11 @@ export default function Contact() {
               <div className="ci-icon"><i className={c.icon}></i></div>
               <div>
                 <h4>{c.title}</h4>
-                {c.lines.map((l, j) => <p key={j}>{l}</p>)}
+                {c.lines.map((l, j) =>
+                  typeof l === 'object'
+                    ? <p key={j}><a href={l.href}>{l.text}</a></p>
+                    : <p key={j}>{l}</p>
+                )}
               </div>
             </div>
           ))}
@@ -121,7 +141,7 @@ export default function Contact() {
         <div className="contact-main-grid">
 
           {/* FORM */}
-          <div className="contact-form-wrap">
+          <div className="contact-form-wrap" id="enquiry-form">
             <h2>Send Us an Enquiry</h2>
             <p className="contact-form-sub">
               Fill in the details below and our technical coordinator will get back to you

@@ -17,7 +17,7 @@ export default function Hero() {
             for industrial &amp; commercial clients.
           </p>
           <div className="hero-cta">
-            <Link to="/contact" className="btn">
+            <Link to="/contact#enquiry-form" className="btn">
               <i className="fas fa-calendar-alt"></i> Get AMC Quote
             </Link>
             <Link to="/services" className="btn btn-outline">
@@ -25,8 +25,8 @@ export default function Hero() {
             </Link>
           </div>
           <div className="hero-stats">
-            <div><i className="fas fa-rocket"></i> Startup</div>
-            <div><i className="fas fa-users"></i> Confident Team</div>
+            <Link to="/startup" className="hero-stat-link"><i className="fas fa-rocket"></i> Startup</Link>
+            <Link to="/team" className="hero-stat-link"><i className="fas fa-users"></i> Confident Team</Link>
             <div><i className="fas fa-headset"></i> 24/7 Support</div>
           </div>
         </div>

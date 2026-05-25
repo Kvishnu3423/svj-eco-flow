@@ -22,7 +22,11 @@ export default function Services() {
       <div className="container services-grid-wrap">
         <div className="services-card-grid">
           {serviceList.map((s) => (
-            <div className="svc-card" key={s.id}>
+            <Link
+              to={s.externalRoute || `/services/${s.id}`}
+              className="svc-card"
+              key={s.id}
+            >
               <div
                 className="svc-card-img"
                 style={{ backgroundImage: `url(${s.cardImage})` }}
@@ -38,11 +42,8 @@ export default function Services() {
                 <div className="svc-tags">
                   {s.tags.map((t, i) => <span key={i}>{t}</span>)}
                 </div>
-                <Link to={s.externalRoute || `/services/${s.id}`} className="svc-detail-link">
-                  View Full Details <i className="fas fa-arrow-right"></i>
-                </Link>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
