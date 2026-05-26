@@ -52,14 +52,9 @@
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s, box-shadow 0.25s;
   text-decoration: none;
   cursor: pointer;
   color: inherit;
-}
-.svc-card:hover {
-  transform: translateY(-7px);
-  box-shadow: var(--shadow-md);
 }
 
 .svc-card-img {
@@ -131,9 +126,7 @@
   font-size: 0.9rem;
   text-decoration: none;
   margin-top: 0.2rem;
-  transition: gap 0.2s;
 }
-.svc-detail-link:hover { gap: 0.7rem; }
 
 /* ── BOTTOM CTA BAR ── */
 .services-cta-bar {
