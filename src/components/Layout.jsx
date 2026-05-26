@@ -59,9 +59,11 @@ export default function Layout() {
         { threshold: 0.08, rootMargin: '0px 0px -48px 0px' }
       )
 
+      const isInServices = (el) => el.closest('.services-page') !== null
+
       // Single elements
       document.querySelectorAll(REVEAL_SELECTORS).forEach((el) => {
-        if (!el.classList.contains('revealed')) {
+        if (!el.classList.contains('revealed') && !isInServices(el)) {
           el.classList.add('reveal')
           observer.observe(el)
         }
@@ -69,7 +71,7 @@ export default function Layout() {
 
       // Staggered groups
       document.querySelectorAll(GROUP_SELECTORS).forEach((el) => {
-        if (!el.classList.contains('revealed')) {
+        if (!el.classList.contains('revealed') && !isInServices(el)) {
           el.classList.add('reveal-group')
           observer.observe(el)
         }
