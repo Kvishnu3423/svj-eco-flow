@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
         <div className="copyright">
           <p>
-            © 2025 SVJ Eco Flow Systems&#8482; — Comprehensive Water &amp; WasteWater treatment Solutions |
+            © 2026 SVJ Eco Flow Systems&#8482; — Comprehensive Water &amp; WasteWater treatment Solutions |
             STP, RO, Pump Sales & Maintenance, AMC Services.
           </p>
         </div>
